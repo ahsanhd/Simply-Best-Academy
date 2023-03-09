@@ -1,0 +1,18 @@
+.header {
+    padding: 2rem 0 20rem 0;
+    background: var(--color-primary);
+    border-bottom-left-radius: 8rem;
+    border-bottom-right-radius: 8rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-image-box {
+    align-self: center;
+}
+
+.header-image {
+    height: 30rem;
+    width: 40rem;
+}

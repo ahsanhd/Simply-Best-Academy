@@ -1,0 +1,26 @@
+.icon-box {
+    background-image: url(../../img/circle.png);
+    height: 9rem;
+    width: 9rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all .2s;
+
+}
+
+.icon-tick {
+    height: 5rem;
+    width: 5rem;
+    &--color {
+        fill: var(--color-black);
+    }
+}
+
+.icon-box:hover > svg > path {
+    fill: var(--color-primary);
+}
+
