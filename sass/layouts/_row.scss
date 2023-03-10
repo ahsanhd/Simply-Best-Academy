@@ -2,13 +2,14 @@
     display: flex;
     width: 80%;
     padding: 2rem 0;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .row-column {
 
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .first-column {
@@ -31,6 +32,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &__white {
+        background-color: #fff;
+        height: 40rem;
+        border-radius: 10px;
+        box-shadow: var(--shadow-dark); 
+        width: 25%;
+        padding: 3rem;
+    }
 }
 
 .col-1-2 {

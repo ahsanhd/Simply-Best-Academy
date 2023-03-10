@@ -1,0 +1,60 @@
+.price-img-box {
+        width: 10rem;
+        margin-top: -3rem;
+}
+
+.price-img {
+        width: 100%;
+}
+
+.price-heading {
+
+}
+
+.price-text {
+    text-align: center;
+    padding: 4rem;
+    font-size: 2rem;
+}
+
+.price-btn, 
+ .price-btn:link,
+ .price-btn:active{
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    color: #fff;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.6rem;
+   // animation-fill-mode: both;
+    cursor: pointer;
+    border: none;
+    background-color: orangered;
+}
+
+.price-btn::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    z-index: -40;
+    transition: all 0.4s;
+    background-color: orangered;
+}
+
+.price-btn:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+.price-btn:hover::after {
+    content: "";
+    transform: scaleX(1.5) scaleY(1.6);
+    opacity: 0;
+}
