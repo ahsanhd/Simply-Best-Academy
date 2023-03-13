@@ -1,0 +1,44 @@
+.subject__img-box {
+    aspect-ratio: 16/9;
+    width: 50rem;
+    padding: 3rem;
+
+}
+
+.subject__img {
+    display: block;
+    width: 100%;
+
+}
+
+.subject__text-section {
+    margin-top: 5rem;
+}
+.subject__heading-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.subject__icon-box{
+    height: 4rem;
+    width: 4rem;
+    margin-right: 1.5rem;
+
+    & > img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.subject__name {
+    font-size: 4rem;
+}
+
+.subject__text {
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+}
+
+.price-btn--color{
+    background-color: var( --main-color-primary);
+}
