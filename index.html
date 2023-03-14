@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Simply Best Academy</title>
+    <script defer src="js/index.js"></script>
+
 </head>
 <body>
     <div class="navigation-wrapper">
@@ -30,14 +32,14 @@
                 <li class="list__item list__dropdown"><a class="list__link list__link--arrow" href="#">Subjects</a>
                    <div class="drop-box">
                         <ul class="dropdown">
-                            <li class="dropdown__item"><a href="#" class="dropdown__link">Maths</a></li>
-                            <li class="dropdown__item"><a href="#" class="dropdown__link">English</a></li>
-                            <li class="dropdown__item"><a href="#" class="dropdown__link">Physics</a></li>
-                            <li class="dropdown__item"><a href="#" class="dropdown__link">Chemistry</a></li>
-                            <li class="dropdown__item"><a href="#" class="dropdown__link">Arabic</a></li>
-                            <li class="dropdown__item"><a href="#" class="dropdown__link">Computer Science</a></li>
-                            <li class="dropdown__item"><a href="#" class="dropdown__link">Urdu</a></li>
-                            <li class="dropdown__item"><a href="#" class="dropdown__link">Biology</a></li>
+                            <li class="dropdown__item"><a href="#math-link" id="math-nav" class="dropdown__link">Maths</a></li>
+                            <li class="dropdown__item"><a href="#english-link"  class="dropdown__link" id="english-nav">English</a></li>
+                            <li class="dropdown__item"><a href="#physics-link" class="dropdown__link" id="physics-nav">Physics</a></li>
+                            <li class="dropdown__item"><a href="#chemistry-link" class="dropdown__link" id="chemistry-nav">Chemistry</a></li>
+                            <li class="dropdown__item"><a href="#arabic-link" class="dropdown__link" id="arabic-nav">Arabic</a></li>
+                            <li class="dropdown__item"><a href="#computer-link" class="dropdown__link" id="computer-nav">Computer Science</a></li>
+                            <li class="dropdown__item"><a href="#urdu-link" class="dropdown__link" id="urdu-nav">Urdu</a></li>
+                            <li class="dropdown__item"><a href="#biology-link" class="dropdown__link" id="biology-nav">Biology</a></li>
                         </ul>
                 </div>
                 </li>
@@ -148,7 +150,7 @@
                             <div class="subject__icon-box">
                                 <img src="img/calculator-alt-regular.png" alt="icon of calculator">
                             </div>
-                            <h3 class="subject__name">Maths</h3>
+                            <h3 class="subject__name" id="math-link">Maths</h3>
                         </div>
                         <p class="subject__text">
                             If you are reading that same chapter in your math book over and over and still feel like you are reading an entirely different language, then it is time to get help from a tutor. The educational consultants at MyTutorPod are happy to help you find an independent, professional math tutor.
@@ -170,7 +172,7 @@
                             <div class="subject__icon-box">
                                 <img src="img/MTP-ENGLISH-ICON.png" alt="icon of calculator">
                             </div>
-                            <h3 class="subject__name">Arts/English</h3>
+                            <h3  class="subject__name" id="english-link">Arts/English</h3>
                         </div>
                         <p class="subject__text">
                             If you are reading that same chapter in your book over and over and still feel like you are reading an entirely different language, then it is time to get help from a tutor. The educational consultants at MyTutorPod are happy to help you find an independent, professional tutor.                        </p>
@@ -191,7 +193,7 @@
                             <div class="subject__icon-box">
                                 <img src="img/MTP-ARABIC-ICON.png" alt="icon of calculator">
                             </div>
-                            <h3 class="subject__name">Arabic</h3>
+                            <h3 id="arabic-link" class="subject__name">Arabic</h3>
                         </div>
                         <p class="subject__text">
                             If you are reading that same chapter in your math book over and over and still feel like you are reading an entirely different language, then it is time to get help from a tutor. The educational consultants at MyTutorPod are happy to help you find an independent, professional math tutor.
@@ -213,7 +215,7 @@
                             <div class="subject__icon-box">
                                 <img src="img/MTP-COMPUTER-ICON.png" alt="icon of calculator">
                             </div>
-                            <h3 class="subject__name">Computer Sciences</h3>
+                            <h3 id="computer-link" class="subject__name">Computer Sciences</h3>
                         </div>
                         <p class="subject__text">
                             If you are reading that same chapter in your math book over and over and still feel like you are reading an entirely different language, then it is time to get help from a tutor. The educational consultants at MyTutorPod are happy to help you find an independent, professional math tutor.
@@ -240,10 +242,10 @@
                             </svg>
                     </div>
                     <h3 class="heading-tertiary">
-                        Anonimity Guaranteed
+                        Learn face-to-face
                     </h3>
                     <p class="services-sub-text">
-                        Are you looking for a safe place to do your homework? Your privacy is our priority. We protect your anonymity and keep your personal information strictly confidential. Your order information stays between you and us.
+                        Students and tutors see each other via live video – great for building rapport
                     </p>
                 </div>
                     <div class="col-1-3">
@@ -253,10 +255,10 @@
                             </svg>    
                         </div>
                         <h3 class="heading-tertiary">
-                            Top Quality
+                            Share and collaborate
                         </h3>
                         <p class="services-sub-text">
-                            Learners who ask us, “do my online homework for me,” are impressed with our exceptional quality of services. It’s because we go out of our way to provide a seamless customer experience. Look what you can expect when using our service.
+                            Upload essays or past papers, and work through examples together on the whiteboard.
                         </p>
                     </div>
 
@@ -267,10 +269,10 @@
                                 </svg>    
                             </div>
                             <h3 class="heading-tertiary">
-                                24/7 Homework Help
+                                It’s flexible , and saves you time!
                             </h3>
                             <p class="services-sub-text">
-                                Essay deadlines aren’t something you can postpone. Feel free to contact us 24/7 and ask, “Help me with homework!” We are here for you day and night, ready to answer your questions.
+                                Regardless of your time zone, you have the ability to schedule classes at any point during the day.
                             </p>
                         </div>
                 </div>
@@ -283,11 +285,10 @@
                             </svg>
                     </div>
                     <h3 class="heading-tertiary">
-                        Skilled Homework Writers
+                        Find a tutor with the skills you need
                     </h3>
                     <p class="services-sub-text">
-                        We hand-picked a team of professional writers from a variety of academic fields. Years of experience, academic degrees, writing excellence, and a rigorous selection process—this is what you can expect when you ask our writers, “Write my homework for me.” Find the best-suited expert for your homework today.
-
+                        Online tuition solves the geography problem – no need to choose Joe because he’s within driving distance. Use our simple search, or if you're not quite sure what you’re looking for, call us. Our tutors cover all subjects and levels, so you can find the one that fits you best.
                     </p>
                 </div>
 
@@ -298,10 +299,10 @@
                             </svg>
                         </div>
                         <h3 class="heading-tertiary">
-                            Free Originality Report
+                            Meet tutors for free before you book
                         </h3>
                         <p class="services-sub-text">
-                            100% originality is at the core of our work. Our writers create all papers from scratch and customize them according to your instructions. To make sure that an essay created at your do my hw for me request is unique, you can get a free originality report.
+                            When you find a tutor you like, arrange a free 15-minute video chat to ask questions and find out more about their teaching style – and make sure they’re someone your child will get on with. It’s all done online of course, so you can chat before breakfast, after dinner, any time you like.
                         </p>
                     </div>
                         <div class="col-1-3">
@@ -310,7 +311,7 @@
                                     <path class="icon-tick--color" fill-rule="evenodd" clip-rule="evenodd" d="M2.76233 41.3438L12.6562 51.2375L0 54L2.76233 41.3438ZM49.703 16.5146L37.4854 4.2969L41.7824 0L54 12.2177L49.7032 16.5146H49.703ZM16.6174 49.6002L46.9033 19.3144L34.6857 7.09668L4.40026 37.382L16.6174 49.6002Z" fill="currentColor"></path>                                </svg>    
                             </div>
                             <h3 class="heading-tertiary">
-                                Do My Assigment Now!
+                                Book Now!
                             </h3>
                             <a href="#" class="services-btn heading-btn ">Get Started</a>
                         </div>
