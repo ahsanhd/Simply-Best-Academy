@@ -8,3 +8,40 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+
+.footer-text-box {
+    text-align: center;
+    padding: 2rem;
+    padding-bottom: 6rem;
+    margin-top: 6rem;
+
+}
+
+.list__item-footer {
+    display: flex;
+    flex-direction: column;
+    padding:.5rem 0 .5rem 0;
+}
+
+.list__link-footer{
+    font-size: 1.6rem;
+
+    &:hover {
+        color: var(--fui-gray-300);
+    }
+}
+
+.footer__list__heading{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.footer__social {
+    margin-top: 1rem;
+}
+
+.copyright {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: left;
+}
