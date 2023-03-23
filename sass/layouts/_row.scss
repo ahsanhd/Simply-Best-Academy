@@ -11,6 +11,9 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+.row__footer{
+    align-items: flex-start;
+}
 
 .first-column {
     flex-basis: 30%;

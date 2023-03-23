@@ -54,8 +54,9 @@
     text-decoration: none; 
     background-color: #fff;
     color: var(--color-primary);
-    margin-right: 1.8rem;
+    font-weight: 600;
     box-shadow: var(--shadow-dark);
+    
     transition: all .2s;
 }
 
@@ -74,3 +75,4 @@
     margin-left: auto;
     justify-content: center;
 }
+

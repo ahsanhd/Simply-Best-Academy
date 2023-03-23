@@ -46,7 +46,7 @@ html {
 body {
   box-sizing: border-box;
   font-family: 'Oswald', sans-serif;
-  font-weight: 400;
+  font-weight: 400 !important;
   line-height: 1.6;
   padding: 0 1rem; }
 
@@ -271,7 +271,7 @@ body {
   text-decoration: none;
   background-color: #fff;
   color: var(--color-primary);
-  margin-right: 1.8rem;
+  font-weight: 600;
   box-shadow: var(--shadow-dark);
   transition: all .2s; }
 
@@ -448,6 +448,8 @@ body {
   padding: 1rem 3rem;
   border-radius: 1rem;
   color: #fff;
+  font-weight: 600;
+  font-family: 'Oswald';
   transition: all 0.2s;
   position: relative;
   font-size: 1.6rem;
@@ -576,6 +578,9 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
+
+.row__footer {
+  align-items: flex-start; }
 
 .first-column {
   flex-basis: 30%; }

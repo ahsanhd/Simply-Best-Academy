@@ -4,7 +4,7 @@ window.addEventListener("load", function () {
   // const physicsNavElem = document.getElementById("physics-nav");
   // const chemistryNavElem = document.getElementById("chemistry-nav");
   const arabicNavElem = document.getElementById("arabic-nav");
-  // const computerNavElem = document.getElementById("computer-nav");
+   const computerNavElem = document.getElementById("computer-nav");
   // const urduNavElem = document.getElementById("urdu-nav");
   // const biologyNavElem = document.getElementById("biology-nav");
 
@@ -29,6 +29,10 @@ window.addEventListener("load", function () {
   })
 
  arabicNavElem.addEventListener('click', function(e) {
+    e.preventDefault();
+   arabicSubjectElem.scrollIntoView({behavior: 'smooth'})
+  })
+  computerNavElem.addEventListener('click', function(e) {
     e.preventDefault();
    arabicSubjectElem.scrollIntoView({behavior: 'smooth'})
   })
