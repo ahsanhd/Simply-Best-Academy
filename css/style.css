@@ -1,3 +1,30 @@
+/*
+cheking for Max-Width i.e. if width < ...px
+
+0-600PX    max-width:        For Phone 
+600-900px  max-width:        Tab-pot
+900-1200px max:width         Tab-land
+1200-1800px                  normal design without media queiry
+
+<1200px - ...px+   min-width         Desktop    (if width > 1200px)
+
+
+
+
+$breakpoint argument choices: 
+
+- phone
+-tab-port
+-tab-land
+-big-desktop
+
+
+1em = 16px
+
+!NOTE!  in media queiries rem and em are not affected by root size but on the default font size of browser which is 16px
+
+!NOTE! always put larger breakpoint before(pehle) the small breakpoints FOR TESTING MAX-WIDTH
+*/
 :root {
   --color-primary:#408af1;
   --color-dark-blue:#14213d;
@@ -42,6 +69,9 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box;
@@ -49,6 +79,9 @@ body {
   font-weight: 400 !important;
   line-height: 1.6;
   padding: 0 1rem; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 .text-box {
   margin-left: 20rem;
@@ -64,12 +97,19 @@ body {
   width: 75%;
   line-height: 1.5;
   margin-bottom: 3rem; }
+  @media (max-width: 37.5em) {
+    .heading-primary {
+      font-size: 4rem;
+      line-height: 1.2; } }
 
 .header-text {
   color: #fff;
   font-size: 2.5rem;
   width: 65%;
   margin-bottom: 5rem; }
+  @media (max-width: 37.5em) {
+    .header-text {
+      font-size: 1.5rem; } }
 
 .services-text-box {
   width: 80%;
@@ -135,6 +175,10 @@ body {
   display: flex;
   justify-content: space-between;
   padding-inline: 2rem; }
+  @media (max-width: 37.5em) {
+    .navigation {
+      flex-direction: column;
+      align-items: center; } }
 
 .logo-box {
   padding: .7rem 1rem; }
@@ -522,6 +566,10 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column; }
+  @media (max-width: 37.5em) {
+    .header {
+      padding: .5rem 0 16rem 0;
+      align-items: center; } }
 
 .header-image-box {
   align-self: center; }

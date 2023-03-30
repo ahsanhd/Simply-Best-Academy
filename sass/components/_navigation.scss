@@ -11,6 +11,11 @@
     display: flex;
     justify-content: space-between;
     padding-inline: 2rem;
+    
+    @include respond(phone) {
+        flex-direction: column;
+        align-items: center;
+    }
 
 }
 

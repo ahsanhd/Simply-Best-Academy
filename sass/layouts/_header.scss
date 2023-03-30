@@ -6,6 +6,11 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+
+    @include respond(phone) {
+        padding: .5rem 0 16rem 0;
+        align-items: center;
+    }
 }
 
 .header-image-box {

@@ -9,6 +9,10 @@
 html {
     font-size: 62.5%;
 
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+
 }
 
 body {
@@ -17,5 +21,9 @@ body {
     font-weight: 400 !important;
     line-height: 1.6;
     padding: 0 1rem;
+
+    @include respond(tab-port) {
+        padding: 0;
+    }
     
 }
