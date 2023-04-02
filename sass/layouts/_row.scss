@@ -3,6 +3,16 @@
     width: 80%;
     padding: 2rem 0;
     justify-content: center;    
+
+    @include respond(tab-land) {
+        width: 80%; 
+        padding: 2rem 0;
+    }
+
+    @include respond(phone) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .row-column {
@@ -29,6 +39,11 @@
     &:not(:last-child) {
 
         margin-right: 5rem;
+
+
+        @include respond(phone) {
+            margin-right: 0;
+        }
     }
 
     display: flex;
@@ -43,6 +58,10 @@
         box-shadow: var(--shadow-dark); 
         width: 25%;
         padding: 3rem;
+
+        @include respond(tab-land) {
+            width: 80%; 
+        }
     }
 }
 

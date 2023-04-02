@@ -13,8 +13,13 @@
 
 .price-text {
     text-align: center;
-    padding: 4rem;
+    padding: 1.8rem;
     font-size: 2rem;
+
+    @include respond(tab-land) {
+        padding: 1rem;
+        font-size: 1.6rem;
+    }
 }
 
 .price-btn, 
@@ -35,6 +40,11 @@
     cursor: pointer;
     border: none;
     background-color: orangered;
+
+    @include respond(tab-land) {
+        
+        font-size: 1.4rem;
+    }
 }
 
 .price-btn::after {
