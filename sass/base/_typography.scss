@@ -60,6 +60,11 @@ padding: 2rem;
     text-transform: capitalize;
     margin-bottom: 2rem;
 
+    @include respond(phone) {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
 }
 
 .services-text {

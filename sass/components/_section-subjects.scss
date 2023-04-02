@@ -3,11 +3,19 @@
     width: 50rem;
     padding: 3rem;
 
+    @include respond(phone) {
+        padding: 0;
+        width: 115%;
+    }
 }
 
 .subject__img {
     display: block;
     width: 100%;
+
+    @include respond(phone) {
+        width: 90%;
+    }
 
 }
 
@@ -32,6 +40,10 @@
 }
 .subject__name {
     font-size: 4rem;
+
+    @include respond(phone) {
+        font-size: 3rem;
+    }
 }
 
 .subject__text {
