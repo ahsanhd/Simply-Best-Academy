@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Simply Best Academy</title>
+    <script defer src="js/index.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+  </head>
+  <body>
+    <div class="navigation-wrapper">
+      <nav class="navigation">
+        <div class="logo-box">
+          <a href="#home">
+            <img src="img/logo.png" alt="logo image" class="logo"
+          /></a>
+        </div>
+        <div class="list-box">
+          <ul class="list">
+            <li class="list__item">
+              <input type="checkbox" class="dropbtn" id="toggle-drop" />&nbsp;/>
+              <label for="toggle-drop" class="toggle-class"
+                ><span class="doit">&nbsp;</span></label
+              >
+              <a class="list__link" id="home" href="#">Home</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#">About Us</a>
+            </li>
+            <li class="list__item"><a class="list__link" href="#">Team</a></li>
+            <li class="list__item">
+              <a class="list__link" href="#">How it Works</a>
+            </li>
+            <li class="list__item list__dropdown">
+              <a class="list__link list__link--arrow" href="#">Subjects</a>
+              <div class="drop-box">
+                <ul class="dropdown">
+                  <li class="dropdown__item">
+                    <a href="#math-link" id="math-nav" class="dropdown__link"
+                      >Maths</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="#english-link"
+                      class="dropdown__link"
+                      id="english-nav"
+                      >English</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="#physics-link"
+                      class="dropdown__link"
+                      id="physics-nav"
+                      >Physics</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="#chemistry-link"
+                      class="dropdown__link"
+                      id="chemistry-nav"
+                      >Chemistry</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="#arabic-link"
+                      class="dropdown__link"
+                      id="arabic-nav"
+                      >Arabic</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="#computer-link"
+                      class="dropdown__link"
+                      id="computer-nav"
+                      >Computer Science</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#urdu-link" class="dropdown__link" id="urdu-nav"
+                      >Urdu</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="#biology-link"
+                      class="dropdown__link"
+                      id="biology-nav"
+                      >Biology</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="list__item"><a class="list__link" href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <!-- <div class="buttons">
+            <div class="buttons-box">
+                <button class="btn btn-login">log in</button>
+                <button class="btn btn-signup">sign up</button>
+            </div>
+        </div> -->
+      </nav>
+    </div>
+    <div class="section-contact">
+      <h2 class="heading-secondary">Contact Us!</h2>
+      <div class="form-container">
+        <div class="form-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo non
+          voluptates iure, accusantium sint voluptas consequuntur et quae sequi
+          perspiciatis laudantium reiciendis cum?
+        </div>
+        <div class="form-group">
+          <h5 class="label-name" for="name">Name</h5>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter Your Name"
+            class="form-placeholder"
+          />
+          <h5 class="label-name" for="email">Email</h5>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter Your Email"
+            class="form-placeholder"
+          />
+          <h5 class="label-name" for="email">Contact Number</h5>
+          <input
+            type="number"
+            id="number"
+            placeholder="Enter Your Mobile Number"
+            class="form-placeholder"
+          />
+          <h5 class="label-name" for="message">Message</h5>
+          <textarea id="message" rows="5" class="form-placeholder"></textarea>
+          <button
+            class="services-btn heading-btn margin-top--medium form-submit-btn--color"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-text-box">
+        <h2 class="heading-secondary color-light margin-bottom--large">
+          Speak to a tutor and get tuition sorted today
+        </h2>
+        <form action="mailto:ahsanhd@outlook.com" class="form" id="form">
+          <button class="price-btn price-btn--color">Find Tutor</button>
+        </form>
+      </div>
+
+      <div class="row row__footer">
+        <div class="col-1-3">
+          <ul class="footer__list">
+            <p class="footer__list__heading color-light">Company Information</p>
+            <li class="list__item list__item-footer">
+              <a class="list__link list__link-footer" href="#"
+                >Become a tutor</a
+              >
+            </li>
+            <li class="list__item list__item-footer">
+              <a class="list__link list__link-footer" href="#">Blog</a>
+            </li>
+            <li class="list__item list__item-footer">
+              <a class="list__link list__link-footer" href="#">FAQs</a>
+            </li>
+            <li class="list__item list__item-footer">
+              <a class="list__link list__link-footer" href="#">Careers</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-1-3">
+          <ul class="footer__list">
+            <p class="footer__list__heading color-light">Popular Requests</p>
+            <li class="list__item list__item-footer">
+              <a class="list__link list__link-footer" href="#">Maths tutors</a>
+            </li>
+            <li class="list__item list__item-footer">
+              <a class="list__link list__link-footer" href="#"
+                >Chemistry tutors</a
+              >
+            </li>
+            <li class="list__item list__item-footer">
+              <a class="list__link list__link-footer" href="#"
+                >Physics tutors</a
+              >
+            </li>
+            <li class="list__item list__item-footer">
+              <a class="list__link list__link-footer" href="#"
+                >Biology tutors</a
+              >
+            </li>
+            <li class="list__item list__item-footer">
+              <a class="list__link list__link-footer" href="#"
+                >Programming tutors</a
+              >
+            </li>
+            <li class="list__item list__item-footer">
+              <a class="list__link list__link-footer" href="#">Art tutors</a>
+            </li>
+            <li class="list__item list__item-footer">
+              <a class="list__link list__link-footer" href="#"
+                >Quran/Arabic tutors</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-1-3">
+          <ul class="footer__list">
+            <p class="footer__list__heading color-light">We're here to help</p>
+            <li class="list__item list__item-footer">
+              <a class="list__link list__link-footer" href="#">Contact us</a>
+            </li>
+            <li class="list__item list__item-footer">
+              <a class="list__link list__link-footer" href="#"
+                >Message us on Whatsapp</a
+              >
+            </li>
+            <li class="list__item list__item-footer">
+              <a class="list__link list__link-footer" href="#">+14538493934</a>
+            </li>
+            <li class="list__item list__item-footer">
+              <a class="list__link list__link-footer" href="#">Email us at</a>
+            </li>
+            <li class="list__item list__item-footer">
+              <a class="list__link list__link-footer" href="#">abc@gmail.com</a>
+            </li>
+          </ul>
+          <div class="footer__social">
+            <a href="#" class="social__link">
+              <svg
+                width="30"
+                height="31"
+                viewBox="0 0 30 31"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 30.7875C23.2843 30.7875 30 24.0857 30 15.8187C30 7.55162 23.2843 0.849854 15 0.849854C6.71573 0.849854 0 7.55162 0 15.8187C0 24.0857 6.71573 30.7875 15 30.7875Z"
+                  fill="url(#paint0_linear_544_1692)"
+                ></path>
+                <path
+                  d="M24.6174 9.86392C23.9099 10.1772 23.1499 10.389 22.3509 10.4842C23.1664 9.99694 23.7911 9.22476 24.086 8.30574C23.3114 8.76486 22.4637 9.08808 21.5796 9.26136C20.8602 8.49609 19.8343 8.01831 18.6993 8.01831C16.5207 8.01831 14.7539 9.78077 14.7539 11.9561C14.7539 12.2643 14.7886 12.565 14.8555 12.8537C11.5759 12.6892 8.66839 11.1216 6.72221 8.73946C6.38238 9.32123 6.18786 9.99765 6.18786 10.7194C6.18786 12.0854 6.88459 13.2906 7.94324 13.9966C7.31654 13.9772 6.70358 13.8084 6.15562 13.5043V13.554C6.15562 15.4621 7.5156 17.0531 9.3209 17.415C8.98927 17.5056 8.64124 17.553 8.28119 17.553C8.02662 17.553 7.77964 17.529 7.53837 17.4837C8.04053 19.0476 9.49785 20.186 11.2241 20.2182C9.87358 21.2746 8.17189 21.9044 6.32365 21.9044C6.00532 21.9044 5.6907 21.8854 5.38184 21.8483C7.12841 22.9659 9.20217 23.6183 11.4307 23.6183C18.6885 23.6183 22.6579 17.618 22.6579 12.4144C22.6579 12.2436 22.6541 12.074 22.6459 11.9051C23.4193 11.3469 24.0868 10.6557 24.6174 9.86392Z"
+                  fill="white"
+                ></path>
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_544_1692"
+                    x1="15"
+                    y1="0.849854"
+                    x2="15"
+                    y2="30.7875"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#11A6DE"></stop>
+                    <stop offset="1" stop-color="#0C81B3"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </a>
+            <a href="#" class="social__link">
+              <svg
+                width="30"
+                height="31"
+                viewBox="0 0 30 31"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M30.0004 15.8189C30.0004 7.55233 23.2839 0.849854 15.0002 0.849854C6.71644 0.849854 0 7.55233 0 15.8189C0 23.2897 5.48453 29.4827 12.6566 30.6068V20.1468H8.84697V15.8189H12.6566V12.5203C12.6566 8.76905 14.8968 6.69558 18.3225 6.69558C19.9637 6.69558 21.6808 6.98818 21.6808 6.98818V10.672H19.7886C17.926 10.672 17.3438 11.8256 17.3438 13.0107V15.8189H21.5036L20.8391 20.1468H17.3438V30.6068C24.5159 29.4848 30.0004 23.2918 30.0004 15.8189Z"
+                  fill="url(#paint0_linear_544_1695)"
+                ></path>
+                <path
+                  d="M20.8388 20.1463L21.5033 15.8183H17.3435V13.0102C17.3435 11.8272 17.9236 10.6715 19.7883 10.6715H21.6805V6.98767C21.6805 6.98767 19.9634 6.69507 18.3223 6.69507C14.8965 6.69507 12.6563 8.76644 12.6563 12.5197V15.8183H8.84668V20.1463H12.6563V30.6063C13.4199 30.7263 14.2025 30.7874 14.9999 30.7874C15.7973 30.7874 16.5799 30.7242 17.3435 30.6063V20.1463H20.8388Z"
+                  fill="#FEFEFE"
+                ></path>
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_544_1695"
+                    x1="15.0002"
+                    y1="0.849854"
+                    x2="15.0002"
+                    y2="30.6068"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#00C6FF"></stop>
+                    <stop offset="1" stop-color="#0076FE"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </a>
+            <a href="#" class="social__link">
+              <svg
+                width="30"
+                height="31"
+                viewBox="0 0 30 31"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 30.7875C23.2843 30.7875 30 24.0857 30 15.8187C30 7.55162 23.2843 0.849854 15 0.849854C6.71573 0.849854 0 7.55162 0 15.8187C0 24.0857 6.71573 30.7875 15 30.7875Z"
+                  fill="url(#paint0_linear_544_1698)"
+                ></path>
+                <path
+                  d="M25.0561 15.5186C25.0561 17.5375 25.0561 18.8991 25.009 19.6503C24.9149 21.4814 24.3974 22.8899 23.3623 23.8759C22.3272 24.8619 20.9628 25.4253 19.1278 25.5192C18.3751 25.5662 16.9636 25.5662 14.9875 25.5662C12.9644 25.5662 11.6 25.5662 10.8472 25.5192C9.01224 25.4253 7.60076 24.9088 6.61272 23.8759C5.62469 22.8899 5.06009 21.4814 4.96599 19.6503C4.91895 18.8991 4.91895 17.4905 4.91895 15.5186C4.91895 13.5466 4.91895 12.1381 4.96599 11.3868C5.06009 9.55572 5.57764 8.14718 6.61272 7.1612C7.60076 6.17522 9.01224 5.6118 10.8472 5.5179C11.6 5.47095 13.0114 5.47095 14.9875 5.47095C17.0106 5.47095 18.3751 5.47095 19.1278 5.5179C20.9628 5.6118 22.3742 6.12827 23.3623 7.1612C24.3503 8.19413 24.9149 9.55572 25.009 11.3868C25.009 12.1381 25.0561 13.4996 25.0561 15.5186ZM15.9755 7.2551C15.3639 7.2551 15.0346 7.2551 14.9875 7.2551C14.9405 7.2551 14.6111 7.2551 13.9995 7.2551C13.3878 7.2551 12.9173 7.2551 12.635 7.2551C12.3057 7.2551 11.8822 7.2551 11.3647 7.30205C10.8472 7.30205 10.3767 7.349 10.0003 7.44291C9.62388 7.48986 9.29453 7.58376 9.05929 7.67766C8.63584 7.86547 8.25945 8.10023 7.88305 8.42889C7.55371 8.75755 7.31846 9.13316 7.13026 9.60267C7.03617 9.83743 6.94207 10.1661 6.89502 10.5417C6.84797 10.9173 6.80092 11.3399 6.75387 11.9033C6.75387 12.4198 6.70682 12.8423 6.70682 13.171C6.70682 13.4996 6.70682 13.9692 6.70682 14.5326C6.70682 15.1429 6.70682 15.4716 6.70682 15.5186C6.70682 15.5655 6.70682 15.8942 6.70682 16.5045C6.70682 17.1149 6.70682 17.5844 6.70682 17.8661C6.70682 18.1948 6.70682 18.6173 6.75387 19.1338C6.75387 19.6503 6.80092 20.1198 6.89502 20.4954C6.98912 20.871 7.03617 21.1997 7.13026 21.4344C7.31846 21.857 7.55371 22.2326 7.88305 22.6082C8.2124 22.9369 8.58879 23.1716 9.05929 23.3594C9.29453 23.4533 9.62388 23.5472 10.0003 23.5942C10.3767 23.6412 10.8001 23.6881 11.3647 23.7351C11.9293 23.782 12.3057 23.782 12.635 23.782C12.9644 23.782 13.4349 23.782 13.9995 23.782C14.6111 23.782 14.9405 23.782 14.9875 23.782C15.0346 23.782 15.3639 23.782 15.9755 23.782C16.5872 23.782 17.0577 23.782 17.34 23.782C17.6693 23.782 18.0928 23.782 18.6103 23.7351C19.1278 23.7351 19.5983 23.6881 19.9747 23.5942C20.3511 23.5472 20.6805 23.4533 20.9157 23.3594C21.3392 23.1716 21.7156 22.9369 22.092 22.6082C22.4213 22.2796 22.6565 21.9039 22.8447 21.4344C22.9388 21.1997 23.0329 20.871 23.08 20.4954C23.127 20.1198 23.1741 19.6972 23.2211 19.1338C23.2211 18.6173 23.2682 18.1948 23.2682 17.8661C23.2682 17.5375 23.2682 17.068 23.2682 16.5045C23.2682 15.8942 23.2682 15.5655 23.2682 15.5186C23.2682 15.4716 23.2682 15.1429 23.2682 14.5326C23.2682 13.9222 23.2682 13.4527 23.2682 13.171C23.2682 12.8423 23.2682 12.4198 23.2211 11.9033C23.2211 11.3868 23.1741 10.9173 23.08 10.5417C23.0329 10.1661 22.9388 9.83743 22.8447 9.60267C22.6565 9.18011 22.4213 8.8045 22.092 8.42889C21.7626 8.10023 21.3862 7.86547 20.9157 7.67766C20.6805 7.58376 20.3511 7.48986 19.9747 7.44291C19.5983 7.39596 19.1749 7.349 18.6103 7.30205C18.0928 7.30205 17.6693 7.2551 17.34 7.2551C17.0577 7.2551 16.5872 7.2551 15.9755 7.2551ZM18.6103 11.8563C19.5983 12.8423 20.1159 14.0631 20.1159 15.5186C20.1159 16.974 19.5983 18.1478 18.6103 19.1808C17.6223 20.1667 16.399 20.6832 14.9405 20.6832C13.4819 20.6832 12.3057 20.1667 11.2706 19.1808C10.2826 18.1948 9.76503 16.974 9.76503 15.5186C9.76503 14.0631 10.2826 12.8893 11.2706 11.8563C12.2586 10.8704 13.4819 10.3539 14.9405 10.3539C16.399 10.3539 17.6223 10.8234 18.6103 11.8563ZM17.34 17.8661C17.9987 17.2088 18.328 16.4106 18.328 15.5186C18.328 14.6265 17.9987 13.7814 17.34 13.124C16.6813 12.4667 15.8814 12.1381 14.9405 12.1381C13.9995 12.1381 13.1996 12.4667 12.5409 13.124C11.8822 13.7814 11.5529 14.5795 11.5529 15.5186C11.5529 16.4576 11.8822 17.2558 12.5409 17.8661C13.1996 18.5234 13.9995 18.8521 14.9405 18.8521C15.8814 18.8521 16.6813 18.5234 17.34 17.8661ZM21.198 9.27401C21.4333 9.50877 21.5744 9.79048 21.5744 10.1191C21.5744 10.4478 21.4333 10.7295 21.198 10.9643C20.9628 11.199 20.6805 11.3399 20.3511 11.3399C20.0218 11.3399 19.7395 11.199 19.5042 10.9643C19.269 10.7295 19.1278 10.4478 19.1278 10.1191C19.1278 9.79048 19.269 9.50877 19.5042 9.27401C19.7395 9.03926 20.0218 8.8984 20.3511 8.8984C20.6805 8.8984 20.9628 9.03926 21.198 9.27401Z"
+                  fill="white"
+                ></path>
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_544_1698"
+                    x1="0"
+                    y1="0.849854"
+                    x2="29.9376"
+                    y2="30.8498"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#2D9EE5"></stop>
+                    <stop offset="0.333333" stop-color="#B53591"></stop>
+                    <stop offset="0.65625" stop-color="#EA5C48"></stop>
+                    <stop offset="1" stop-color="#FED97D"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <span class="copyright">SimnplyBestAcademy&#169; 2022-2023</span>
+    </footer>
+  </body>
+</html>

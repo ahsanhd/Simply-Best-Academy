@@ -26,12 +26,12 @@ $breakpoint argument choices:
 !NOTE! always put larger breakpoint before(pehle) the small breakpoints FOR TESTING MAX-WIDTH
 */
 :root {
-  --color-primary:#408af1;
-  --color-dark-blue:#14213d;
-  --color-black:#14213d;
-  --color-grey:#464343;
-  --color-light-grey:#f6f2ee;
-  --shadow-dark:0rem .6rem 1rem rgba(0,0,0,.4);
+  --color-primary: #408af1;
+  --color-dark-blue: #14213d;
+  --color-black: #14213d;
+  --color-grey: #464343;
+  --color-light-grey: #f6f2ee;
+  --shadow-dark: 0rem 0.6rem 1rem rgba(0, 0, 0, 0.4);
   --main-color-primary: #5bc4bd;
   --main-color-secondary: #0c343d;
   --main-color-ternary: #ffffff;
@@ -39,7 +39,7 @@ $breakpoint argument choices:
   --main-color-quinary: #5bc4bd;
   --main-color-senary: #ffffff;
   --main-color-septenary: #0c343d;
-  --header-color:#eaedf4;
+  --header-color: #eaedf4;
   --fui-font-size: 16px;
   --fui-color: #374151;
   --fui-primary-color: #516fea;
@@ -58,7 +58,7 @@ $breakpoint argument choices:
   --fui-border-radius: 0.25rem;
   --fui-border-color: #d1d5db;
   --fui-focus-border-color: #a4cafe;
-  --fui-focus-shadow: 0 0 0 3px rgba(164,202,254,0.45); }
+  --fui-focus-shadow: 0 0 0 3px rgba(164, 202, 254, 0.45); }
 
 *,
 *::after,
@@ -177,6 +177,9 @@ body {
 
 .color-light {
   color: var(--fui-gray-100); }
+
+.margin-top--medium {
+  margin-top: 2rem; }
 
 .navigation-wrapper {
   background-color: var(--color-primary);
@@ -793,3 +796,53 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center; }
+
+.section-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fcfcfc;
+  border-bottom-left-radius: 8rem;
+  border-bottom-right-radius: 8rem;
+  padding: 10rem 0 15rem 0;
+  margin-top: -10rem; }
+
+.form-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e6ba8; }
+
+.form-text {
+  width: 50%;
+  height: 100%;
+  font-size: 2rem;
+  flex-wrap: wrap;
+  padding: 3rem;
+  padding-left: 5rem;
+  color: var(--main-color-senary); }
+
+.form-group {
+  background-color: #fcfcfc;
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.label-name {
+  font-size: 2.5rem;
+  width: 80%;
+  text-align: center; }
+
+.form-placeholder {
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 2rem;
+  border: 2px solid #46237a;
+  border-radius: 1rem;
+  width: 80%; }
+
+.form-submit-btn--color {
+  background-color: #0e6ba8; }
