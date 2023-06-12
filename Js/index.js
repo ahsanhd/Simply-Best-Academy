@@ -37,3 +37,28 @@ window.addEventListener("load", function () {
    arabicSubjectElem.scrollIntoView({behavior: 'smooth'})
   })
 });
+
+
+function sendEmail() {
+  var params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    number: document.getElementById("number").value,
+    message: document.getElementById("message").value
+  }
+
+  const serviceID = "service_6i26nzj";
+  const templateID = "template_4p4r9vs"
+
+  emailjs.send(serviceID,templateID,params)
+  .then(
+    res => {
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("number").value = "";
+      document.getElementById("message").value = "";
+      console.log(res);
+      alert("your sent successfully!")
+    })
+    .catch(err => console.log(err));
+}
