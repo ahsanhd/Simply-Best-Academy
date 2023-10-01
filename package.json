@@ -7,7 +7,8 @@
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "compile:sass": "node-sass sass/main css/style.css",
     "devserver": "live-server --browser=chrome",
-    "start": "npm-run-all --parallel devserver watch:sass"
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "build":"parcel styles/main.scss"
   },
   "author": "Ahsan",
   "license": "ISC",
