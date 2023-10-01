@@ -2,7 +2,10 @@
 }
 
 .section-howitworks {
-  width: 60%;
+  width: 63%;
+  @include respond(tab-land) {
+    width: 80%;
+  }
 }
 .heading-sub-method {
   font-size: 2.7rem;

@@ -902,7 +902,10 @@ main {
   padding: 0 3.2rem; }
 
 .section-howitworks {
-  width: 60%; }
+  width: 63%; }
+  @media (max-width: 75em) {
+    .section-howitworks {
+      width: 80%; } }
 
 .heading-sub-method {
   font-size: 2.7rem;
