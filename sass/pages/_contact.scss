@@ -15,6 +15,10 @@
   justify-content: center;
   align-items: center;
   background-color: #0e6ba8;
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
 }
 
 .form-text {
@@ -25,6 +29,10 @@
   padding: 3rem;
   padding-left: 5rem;
   color: var(--main-color-senary);
+
+  @include respond(phone) {
+    width: 100%;
+  }
 }
 
 .form-group {
@@ -35,6 +43,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @include respond(phone) {
+    width: 100%;
+  }
 }
 
 .label-name {

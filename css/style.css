@@ -813,6 +813,9 @@ main {
   justify-content: center;
   align-items: center;
   background-color: #0e6ba8; }
+  @media (max-width: 37.5em) {
+    .form-container {
+      flex-direction: column; } }
 
 .form-text {
   width: 50%;
@@ -822,6 +825,9 @@ main {
   padding: 3rem;
   padding-left: 5rem;
   color: var(--main-color-senary); }
+  @media (max-width: 37.5em) {
+    .form-text {
+      width: 100%; } }
 
 .form-group {
   background-color: #fcfcfc;
@@ -831,6 +837,9 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+  @media (max-width: 37.5em) {
+    .form-group {
+      width: 100%; } }
 
 .label-name {
   font-size: 2.5rem;
