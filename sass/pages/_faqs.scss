@@ -6,19 +6,32 @@
   background-color: var(--fui-gray-200);
   width: 100%;
   height: 100%;
+
+  @include respond(phone) {
+    align-items: center;
+  }
 }
 
 .faqs-main {
   align-items: flex-start;
   padding: 7rem 0 15rem 6rem;
+  @include respond(phone) {
+    padding: 0rem 0 12rem 1rem;
+  }
 }
 
 .heading-faqs {
   margin-bottom: 0;
   padding-left: 6rem;
+  @include respond(phone) {
+    padding-left: 0rem;
+  }
 }
 .heading-faqs--sub {
   padding-left: 6rem;
+  @include respond(phone) {
+    padding-left: 0rem;
+  }
 }
 
 .faq-question {
@@ -33,4 +46,13 @@
   font-weight: 300;
   margin-top: 2rem;
   color: var(--fui-gray-600);
+  padding-right: 60rem;
+
+  @include respond(tab-land) {
+    padding-right: 6rem;
+  }
+
+  @include respond(phone) {
+    padding-right: 2rem;
+  }
 }
